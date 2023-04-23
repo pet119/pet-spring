@@ -9,7 +9,7 @@ name: build test
 
 on:
   pull_request:
-    branches: [ "master", "develop" ]
+    branches: [ "master", "staging" ]
 
 permissions:
   contents: read
