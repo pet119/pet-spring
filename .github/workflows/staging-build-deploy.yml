@@ -1,4 +1,4 @@
-name: Java CI/CD with Gradle
+name: staging CI/CD with Gradle
 
 on:
   push:
@@ -69,8 +69,8 @@ jobs:
            sudo docker stop pet119-spring-staging
            sudo docker rm pet119-spring-staging
            sudo docker rmi $(sudo docker images -q yubyeongsoo/pet119-spring-staging)
-           sudo docker pull yubyeongsoo/pet_119_back
-           sudo docker run -d -p 8080:8080 --name pet_119_back yubyeongsoo/pet119-spring-staging
+           sudo docker pull yubyeongsoo/pet119-spring-staging
+           sudo docker run -d -p 8080:8080 --name pet119-spring-staging yubyeongsoo/pet119-spring-staging
 
 
     # REMOVE Github IP FROM security group
